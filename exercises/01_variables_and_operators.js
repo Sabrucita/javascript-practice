@@ -6,3 +6,11 @@ var b= 3;
 var c= a+b;
 
 console.log(c);
+
+/*b) Crear dos variables de tipo String y concatenarlas guardando el resultado en una 3er variable.*/
+
+var a= "Hola ";
+var b= "Mundo";
+var c= a + b;
+
+console.log(c);
