@@ -32,3 +32,12 @@ console.log(month.reverse());
 (utilizar join).*/
 
 console.log(month.join(" - "));
+
+/* g) Crear una copia del array de meses que contenga desde Mayo hasta Noviembre (utilizar slice).*/
+
+var newMonth = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre",
+"Octubre", "Noviembre", "Diciembre"];
+
+var sliceNewMonth = newMonth.slice(4,11);
+
+console.log(sliceNewMonth);
