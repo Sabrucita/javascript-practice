@@ -12,7 +12,14 @@ console.log(month.sort());
 
 /* c) Agregar un elemento al principio y al final del array (utilizar unshift y push).*/
 
-month.unshift("Primero");
-month.push("Ultimo");
+month.unshift("First");
+month.push("Last");
+
+console.log(month);
+
+/* d) Quitar un elemento del principio y del final del array (utilizar shift y pop).*/
+
+month.pop();
+month.shift();
 
 console.log(month);
