@@ -14,3 +14,12 @@ var b= "Mundo";
 var c= a + b;
 
 console.log(c);
+
+/*c) Crear dos variables de tipo String y sumar el largo de cada variable (cantidad de letras del string) guardando el
+resultado de la suma en una 3er variable (utilizar length).*/
+
+var a="Sabrina";
+var b="Pereira";
+var c= a.length + b.length;
+
+console.log(c);
