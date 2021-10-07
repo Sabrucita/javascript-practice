@@ -23,3 +23,7 @@ month.pop();
 month.shift();
 
 console.log(month);
+
+/* e) Invertir el orden del array (utilizar reverse).*/
+
+console.log(month.reverse());
