@@ -45,3 +45,22 @@ function addition(a,b) {
 }
 
 addition(3,6);
+
+/* e) Convertir la validación del ejercicio 6b) en una función separada y llamarla dentro de la función suma probando
+que todo siga funcionando igual.*/
+
+function validationCheck(a,b){
+  if( isNaN(a) || isNaN(b)){
+    console.log("NaN");
+    alert("One of the parameters is not a number");
+  }else{
+  console.log(a+b)
+  }
+}
+
+function addition(a,b) {
+  validationCheck(a,b);
+}
+
+validationCheck(10,10);
+addition(10,"a");
