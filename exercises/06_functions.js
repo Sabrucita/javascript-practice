@@ -21,3 +21,12 @@ function additionCheck(a,b){
 }
 
 additionCheck(10,3);
+
+/* c) Crear una función validate integer que reciba un número como parámetro y devuelva verdadero si es un
+número entero.*/
+
+function numberValidation(x){
+  console.log(Number.isInteger(x));
+}
+
+numberValidation (10);
