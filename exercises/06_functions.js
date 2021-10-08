@@ -30,3 +30,18 @@ function numberValidation(x){
 }
 
 numberValidation (10);
+
+/* d) A la función suma del ejercicio 6b) agregarle una llamada que valide que los números sean enteros. En caso que
+haya decimales mostrar un alerta con el error y retorna el número convertido a entero (redondeado).*/
+
+function addition(a,b) {
+  var results= a+b;
+  if (Number.isInteger(results)){
+    console.log("It's an integer number");
+  }else{
+    alert("Error, it's not an integer number");
+    console.log(Math.round(results));
+  }
+}
+
+addition(3,6);
