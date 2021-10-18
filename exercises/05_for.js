@@ -18,7 +18,7 @@ for (let i = 0; i < word.length; i++) {
 bucle for para ir guardando cada palabra dentro de la variable sentence. Al final mostrar una única alerta con la cadena
 completa.*/
 
-sentence="";
+var sentence="";
 
 for (let i = 0; i < word.length; i++) {
     sentence += word[i] + ", ";
