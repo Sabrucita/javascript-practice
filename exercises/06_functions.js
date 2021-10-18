@@ -2,8 +2,7 @@
 resultado en una variable, mostrando el valor de dicha variable en la consola del navegador.*/
 
 function addition(a,b) {
-    var results= a+b;
-    console.log(results);
+  return a+b;
 }
 
 addition(10,3);
@@ -13,23 +12,22 @@ mostrar una alerta aclarando que uno de los parámetros tiene error y retornar e
 
 function additionCheck(a,b){
     if( isNaN(a) || isNaN(b)){
-      console.log("NaN");
-      alert("One of the parameters is not a number");
+      alert("Addition Check: One of the parameters is not a number");
+      return "NaN";
     }else{
-    console.log(a+b)
+    return a+b;
     }
 }
-
-additionCheck(10,3);
+console.log(additionCheck(10,3));
 
 /* c) Crear una función validate integer que reciba un número como parámetro y devuelva verdadero si es un
 número entero.*/
 
 function numberValidation(x){
-  console.log(Number.isInteger(x));
+  return Number.isInteger(x);
 }
 
-numberValidation (10);
+console.log(numberValidation(10));
 
 /* d) A la función suma del ejercicio 6b) agregarle una llamada que valide que los números sean enteros. En caso que
 haya decimales mostrar un alerta con el error y retorna el número convertido a entero (redondeado).*/
@@ -37,30 +35,30 @@ haya decimales mostrar un alerta con el error y retorna el número convertido a 
 function addition(a,b) {
   var results= a+b;
   if (Number.isInteger(results)){
-    console.log("It's an integer number");
+    return results;
   }else{
-    alert("Error, it's not an integer number");
-    console.log(Math.round(results));
+    alert(results + " is not an integer number");
+    return Math.round(results);
   }
 }
 
-addition(3,6);
+console.log(addition(3,6));
 
 /* e) Convertir la validación del ejercicio 6b) en una función separada y llamarla dentro de la función suma probando
 que todo siga funcionando igual.*/
 
 function validationCheck(a,b){
   if( isNaN(a) || isNaN(b)){
-    console.log("NaN");
-    alert("One of the parameters is not a number");
+    alert("Validation Check: One of the parameters is not a number");
+    return "NaN";
   }else{
-  console.log(a+b)
+  return a+b;
   }
 }
 
-function addition(a,b) {
-  validationCheck(a,b);
+function callValidationCheck(a,b) {
+  return validationCheck(a,b);
 }
 
-validationCheck(10,10);
-addition(10,"a");
+console.log(validationCheck(10,10));
+console.log(callValidationCheck(10,"a"));
